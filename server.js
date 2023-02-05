@@ -17,6 +17,8 @@ const CONFIG = {
     useUnifiedTopology: true
   }
 
+  mongoose.set('strictQuery', false)
+
 // Establish Connection
 mongoose.connect(DATABASE_URL, CONFIG)
 
@@ -63,5 +65,5 @@ app.get("/", (req, res) => {
 //////////////////////////////////////////////
 // Server Listener
 //////////////////////////////////////////////
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 3000
 app.listen(PORT, () => console.log(`Now Listening on port ${PORT}`))
