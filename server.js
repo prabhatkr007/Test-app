@@ -61,6 +61,9 @@ app.use("/static", express.static("static")) // serve files from public statical
 app.get("/", (req, res) => {
     res.render("index.ejs", {greeting: "Hello"})
 })
+app.get('/regiser',(req,res)=>{
+    res.render('register.ejs')
+})
 
 //////////////////////////////////////////////
 // Server Listener
