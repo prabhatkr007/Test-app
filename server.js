@@ -65,6 +65,10 @@ app.get('/regiser',(req,res)=>{
     res.render('register.ejs')
 })
 
+app.get("/register", (req, res) => {
+    res.render("register.ejs")
+})
+
 //////////////////////////////////////////////
 // Server Listener
 //////////////////////////////////////////////
