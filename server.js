@@ -63,5 +63,5 @@ app.get("/", (req, res) => {
 //////////////////////////////////////////////
 // Server Listener
 //////////////////////////////////////////////
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 'mongodb://localhost:27017/deply-test'
 app.listen(PORT, () => console.log(`Now Listening on port ${PORT}`))
